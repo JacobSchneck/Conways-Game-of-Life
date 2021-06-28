@@ -25,9 +25,9 @@ function  BoardButton(props) {
     //   {/* {`${props.tileClassName}`} */}
 
 
-    <button className={props.tileClassName} key={props.keyID} onClick={props.onClick}>
-      {name}
-    </button>
+    <div className={props.tileClassName} key={props.keyID} onClick={props.onClick}>
+      {/* {name} */}
+    </div>
   )
 }
 
@@ -35,7 +35,7 @@ class Board extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      grid : Array(20).fill(Array(20).fill(0)),
+      grid : Array(50).fill(Array(50).fill(0)),
       simulate: false,
     }
   }
@@ -76,16 +76,41 @@ class Board extends React.Component {
     // console.log(tiles);
 
     return (
-      <div className="board" 
-        style = {{
-          display: "grid",
-          gridTemplateColumns: `repeat(${this.state.grid[0].length}, 20px)`
-        }}
-      > 
-        {tiles}
+      <div>
+        <div className="board" 
+          style = {{
+            gridTemplateColumns: `repeat(${this.state.grid[0].length}, 20px)`
+          }}
+        > 
+          {tiles}
+        </div>
       </div>
     );
   }
+}
+
+function RunSinmulation() {
+
+  // handleClick = () => {
+
+  // }
+  return (
+    <div>
+      <button className="simulate-button">
+        Simulate
+      </button>
+    </div>
+  );
+}
+
+function ClearBoard() {
+  return (
+    <div>
+      <button className="clear-button">
+        Clear
+      </button>
+    </div>
+  );
 }
 
 function App() {
@@ -97,6 +122,20 @@ function App() {
         </h1>
       </header>
       <Board key="boardID"/>
+      <header className="App-header">
+        <h1>
+          Controls
+        </h1>
+      </header>
+      <div className="controls">
+          <RunSinmulation />
+          <ClearBoard />
+      </div>
+      <header className="App-header">
+        <h1>
+          Graph
+        </h1>
+      </header>
     </div>
   );
 }
