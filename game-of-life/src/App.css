@@ -21,7 +21,7 @@
 }
 
 .tile-on {
-  background-color: #f8f8f8;
+  background-color: #0b5c2d;
   width:  20px;
   height: 20px;
   border: .5px solid black;
@@ -36,7 +36,7 @@
 
 .controls {
   display: grid;
-  grid-template-columns: 300px 300px auto 300px 300px;
+  grid-template-columns: 300px 300px 300px;
   grid-template-rows: 200px auto;
   background-color: rgb(250, 119, 119);
   justify-content: center;
@@ -46,7 +46,7 @@
   height: 80px;
   width: 250px;
   margin-top: 20%;
-  font-size: 20px;
+  font-size: 30px;
   border: 1px solid black;
 }
 
@@ -59,12 +59,24 @@
   height: 80px;
   width: 250px;
   margin-top: 20%;
-  font-size: 20px;
+  font-size: 30px;
   border: 1px solid black;
 }
 
 .clear-button:hover {
   background-color: #343469;
-
 }
 
+.speed-button {
+  /* grid-column-start: 4;
+  grid-column-end: 5; */
+  height: 80px;
+  width: 250px;
+  margin-top: 20%;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.speed-button:hover {
+  background-color: #343469;
+}
