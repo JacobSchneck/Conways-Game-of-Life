@@ -13,6 +13,14 @@
   color: rgb(250, 119, 119);
 }
 
+.board-container {
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+  grid-template-rows: auto;
+  background-color: rgb(250, 119, 119);
+  justify-content: center;
+}
+
 .board {
   /* background-color: #b33232; */
   display: grid;
@@ -21,7 +29,7 @@
 }
 
 .tile-on {
-  background-color: #0b5c2d;
+  background-color: hsla(157, 63%, 37%, 0.973);
   width:  20px;
   height: 20px;
   border: .5px solid black;
@@ -36,13 +44,13 @@
 
 .controls {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px 300px;
   grid-template-rows: 200px auto;
   background-color: rgb(250, 119, 119);
   justify-content: center;
 }
 
-.simulate-button {
+.control-button {
   height: 80px;
   width: 250px;
   margin-top: 20%;
@@ -50,33 +58,20 @@
   border: 1px solid black;
 }
 
-.simulate-button:hover {
-  background-color: #343469;
-
+.control-button:hover {
+  background-color: #626297;
 }
 
-.clear-button {
-  height: 80px;
-  width: 250px;
-  margin-top: 20%;
-  font-size: 30px;
-  border: 1px solid black;
-}
-
-.clear-button:hover {
-  background-color: #343469;
-}
-
-.speed-button {
-  /* grid-column-start: 4;
-  grid-column-end: 5; */
-  height: 80px;
-  width: 250px;
-  margin-top: 20%;
-  font-size: 30px;
-  border: 1px solid black;
-}
-
-.speed-button:hover {
-  background-color: #343469;
+.graph-container {
+  display: grid;
+  /* padding: 1%; */
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* grid-template-columns: 300px auto  300px;
+  grid-template-rows: auto; */
+  background-color: #779faf;
+  /* background-color: rgb(43, 18, 112); */
+  justify-content: center;
 }
