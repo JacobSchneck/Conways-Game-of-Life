@@ -7,6 +7,4 @@ Conway's game of life follows the lives of a simple cell species from generation
 ## Ideas/TODOs for the future
 
 - Ability to save and upload boards to cut down on click time
-- Reimplenent with hooks
 - Allow the user to modify the board size. 
-- Refactor code into multiple files to make more managable. 
